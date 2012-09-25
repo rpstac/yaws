@@ -286,6 +286,8 @@ setup_sconf(SL, SC) ->
            deflate_options       = lkup(deflate_options, SL,
                                         SC#sconf.deflate_options),
            mime_types_info       = lkup(mime_types_info, SL,
+                                        SC#sconf.mime_types_info),
+           dispatch_mod          = lkup(dispatch_mod, SL,
                                         SC#sconf.mime_types_info)
           }.
 
